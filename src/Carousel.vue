@@ -1,10 +1,29 @@
 <template>
-    <h3>Hello World</h3>
+    <div class="p-event__list" data-js="event-page-slider">
+        <slot></slot>
+    </div>
 </template>
 
 <script>
+import 'dist/simple-vue-slick.min';
+import 'dist/styles.css';
 export default {
-    name: 'Carousel'
+    name: 'Carousel',
+    mounted() {
+        $('[data-js="event-page-slider"]').not('.slick-initialized').slick({
+            autoplay: false,
+            infinite: true,
+            arrows: true,
+            dots: false,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            variableWidth: true,
+            responsive: [{
+                breakpoint: 768,
+                settings: "unslick"
+            }]
+        });
+    }
 }
 </script>
 
