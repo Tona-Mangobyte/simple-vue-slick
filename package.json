@@ -1,0 +1,46 @@
+{
+  "name": "simple-vue-slick",
+  "description": "VueJS wrapper for Vue slick Carousel",
+  "version": "1.0.8",
+  "author": {
+    "name": "Tona Chheun <tona@mango-byte.com>"
+  },
+  "keywords": [
+    "vuejs",
+    "slick",
+    "carousel"
+  ],
+  "bundleDependencies": false,
+  "dependencies": {
+    "css-loader": "^1.0.0",
+    "file-loader": "^2.0.0",
+    "jquery": "^3.3.1",
+    "style-loader": "^0.23.0"
+  },
+  "deprecated": false,
+  "devDependencies": {
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-runtime": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-2": "^6.11.0",
+    "babel-runtime": "^6.9.2",
+    "rimraf": "^2.6.1",
+    "vue": "^2.2.1",
+    "vue-html-loader": "^1.2.3",
+    "vue-loader": "^11.1.4",
+    "vue-style-loader": "^2.0.3",
+    "vue-template-compiler": "^2.2.1",
+    "webpack": "1.13.1",
+    "webpack-merge": "^4.1.0"
+  },
+  "license": "MIT",
+  "main": "dist/simple-vue-slick.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tona-Mangobyte/simple-vue-slick.git"
+  },
+  "scripts": {
+    "build": "webpack --config ./webpack.config.js"
+  }
+}
