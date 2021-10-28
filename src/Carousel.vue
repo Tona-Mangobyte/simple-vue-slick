@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import 'dist/simple-vue-slick.min';
+import 'dist/simple-vue-slick.min.js';
 import 'dist/styles.css';
 export default {
     name: 'Carousel',
