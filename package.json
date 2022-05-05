@@ -1,7 +1,7 @@
 {
   "name": "simple-vue-slick",
   "description": "VueJS wrapper for Vue slick Carousel",
-  "version": "1.0.8",
+  "version": "1.0.0",
   "author": {
     "name": "Tona Chheun <tona@mango-byte.com>"
   },
@@ -15,7 +15,8 @@
     "css-loader": "^1.0.0",
     "file-loader": "^2.0.0",
     "jquery": "^3.3.1",
-    "style-loader": "^0.23.0"
+    "style-loader": "^0.23.0",
+    "uglifyjs-webpack-plugin": "^2.2.0"
   },
   "deprecated": false,
   "devDependencies": {

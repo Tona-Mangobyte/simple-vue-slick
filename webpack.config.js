@@ -1,10 +1,14 @@
 const webpack = require('webpack');
 const merge = require('webpack-merge');
 const path = require('path');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 var config = {
     output: {
         path: path.resolve(__dirname + '/dist/'),
+    },
+    optimization: {
+        minimizer: [new UglifyJsPlugin({ sourceMap : true })],
     },
     module: {
         loaders: [
@@ -38,14 +42,12 @@ var config = {
         moment: 'moment'
     },
     plugins: [
-        new webpack.optimize.UglifyJsPlugin( {
+        /*new webpack.optimize.UglifyJsPlugin( {
             minimize : true,
-            sourceMap : false,
+            sourceMap : true,
             mangle: true,
-            compress: {
-                warnings: false
-            }
-        } ),
+            compress: true,
+        } ),*/
         new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery',
